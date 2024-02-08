@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+
+</head>
+
+<body>
+    <!-- Your code goes here -->
+    <div class="maincontainer">
+    <div class="imagecontainer">
+        <div class="bigimg">
+         <img src="./assets/bigimg.png" alt="">
+        </div>
+        <div class="smallimg">
+            <img src="./assets/pic1.png" alt="">
+            <img src="./assets/pic2.png" alt="">
+            <img src="./assets/pic3.png" alt="">
+            <img src="./assets/pic4.png" alt="">
+        </div>
+    </div>
+     <div class="contentcontainer">
+        <div class="prductname">
+            <p id="marmeto">Marmeto</p>
+            <p id="Embrace"> Embrace Sideboard</p>
+        </div>
+        <div class="line"></div>
+        <div class="pricecontainer">
+            <div class="currpriceanddiscount">
+                <p id="currentprice" onclick="percentageoff()">$12990.00  </p>
+                <p id="discount">35% </p> 
+            </div>
+            <div id="orignalprice">
+                <strike>$18447.00</strike>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="colorpicker">
+            <p id="choosecolor">  choose your color</p>
+            <div class="colors">
+        <div class="box" style="background-color: #BBD278"onclick="selectBox(1,this)"> </div>
+        <div class="box" style="background-color: #BBC1F8"onclick="selectBox(2,this)"> </div>
+        <div class="box" style="background-color: #FFD3F8"onclick="selectBox(3,this)"> </div>
+        <div class="box" style="background-color: #B9BBBF"onclick="selectBox(4,this)"> </div>
+             
+
+            </div>
+            
+        </div>
+        <div class="line"></div>
+        <div class="sizechoose">
+            <p>Choose a size</p>
+            <div class="sizebuttons">
+                <label class="inputs">
+                    <type="radio" name="item" value="item1" onchange="updateSelectedItem()"> Small
+                  </label>
+                <label class="inputs">
+                    <input type="radio" name="item" value="Medium" onchange="updateSelectedItem()"> Medium
+                  </label>
+                <label class="inputs">
+                    <input type="radio" name="item" value="Large" onchange="updateSelectedItem()"> Large
+                  </label>
+                <label class="inputs">
+                    <input type="radio" name="item" value="Extra Large" onchange="updateSelectedItem()"> Extra Large
+                  </label>
+                <label class="inputs">
+                    <input type="radio" name="item" value="XXl" onchange="updateSelectedItem()"> XXL
+                  </label>
+          
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="button1">
+               <div onclick="decrementCounter()"  class="plus">-</div>
+               <div  id="counter" class="value">0</div>
+               <div onclick="incrementCounter()" class="minus">+</div>
+            </div>
+            <div class="button2" onclick="Addtocart()">
+                Add to cart
+            </div>
+        </div>
+        <div class="shopdetail">
+            Embrace Sideboard with Color Yellow and Size Small added to cart
+        </div>
+        <div class="line"></div>
+        <div class="description">
+            <p>The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and reliability.
+
+            </p>
+        </div>
+
+     </div>
+    </div>
+    <!-- Happy coding 😊 -->
+    
+    <script src="./script.js">
+         
+    </script>
+</body>
+
+</html>

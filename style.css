@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: Inter;
+}
+
+.maincontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  /* height: 843px; */
+  margin: 0px auto;
+}
+
+.imagecontainer {
+  width: 587px;
+  /* height: 100%; */
+}
+
+.bigimg {
+  width: 587px;
+  height: 691px;
+
+}
+
+.bigimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.smallimg {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  height: 115px;
+  margin: 0px auto;
+  margin-top: 20px;
+  /* border: 1px solid rgb(76, 168, 207); */
+}
+
+.smallimg img {
+  width: 115px;
+  height: 115px;
+}
+
+.contentcontainer {
+  width: 582px;
+  height: 100%;
+}
+
+.prductname {
+  /* border: 1px solid cyan; */
+}
+
+#marmeto {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px;
+  line-height: 19.36px;
+  color: #B9BBBF;
+}
+
+#Embrace {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Inter;
+  margin: 12px 0px;
+  line-height: 33.89px;
+
+}
+
+.line {
+  /* height: 1px; */
+  margin: 0px;
+  border: 0.1px solid #E4E4E4;
+}
+
+.pricecontainer {
+  /* height: 72px; */
+  /* border: 1px solid blue; */
+}
+
+.currpriceanddiscount {
+  display: flex;
+  align-items: center;
+}
+
+#currentprice {
+  font-family: Inter;
+  font-size: 34px;
+  font-weight: 700;
+  color: #3A4980;
+  margin: 0px 0px;
+}
+
+#discount {
+  font-family: Inter;
+  font-size: 21px;
+  color: #FF000080;
+  margin-left: 17px;
+
+}
+
+#orignalprice {
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 400;
+  color: #00000080;
+  margin-bottom: 16px;
+
+}
+
+.colorpicker {
+  /* border: 1px solid green; */
+
+}
+
+#choosecolor {
+  font-size: 16px;
+  font-weight: 500;
+  color: #B9BBBF;
+
+}
+
+.colors {
+  display: flex;
+  width: 292px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  border: 2px solid transparent;
+
+
+}
+
+.selected {
+  border: 3px solid transparent;
+  box-shadow: inset 0 0 0 2px white;
+  background-image: url(./assets/tick.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+#brown {
+  width: 50px;
+  height: 50px;
+  background-color: #ECDECC;
+  border: 1px solid transparent;
+  color: white;
+  text-align: center;
+  box-shadow: inset 0 0 0 2px white;
+}
+
+.sizechoose p {
+  color: #B9BBBF;
+}
+
+.sizebuttons {
+  width: 527px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+  border-radius: 8px;
+  height: 31px;
+  font-style: 14px;
+  padding: 0px 7px;
+  font-family: Inter;
+  color: #726C6C;
+
+}
+
+.buttons {
+  margin: 30px 0px;
+  width: 497px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.button1 {
+  width: 34%;
+  height: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 29px;
+  color: rgb(210, 76, 76);
+  background-color: #F3F3F3;
+
+}
+
+.button2 {
+  width: 62%;
+  height: 59px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #3A4980;
+  border-radius: 29.5px;
+
+}
+
+.plus {
+  font-size: 28px;
+  color: #3A4980;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.minus {
+  font-size: 28px;
+  color: #3A4980;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+.value {
+  font-size: 28px;
+  color: #3A4980;
+  font-weight: 700;
+
+}
+
+.description p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #A3A3A3;
+}
+
+.shopdetail {
+  visibility: hidden;
+  background-color: #E7F8B7;
+  width: 497px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  height: 31px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width:768px) {
+  .maincontainer {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .imagecontainer {
+    width: 100%;
+    margin: 0px auto;
+  }
+  .bigimg{
+    width: 100%;
+  }
+  .smallimg {
+    /* display: none; */
+    width: 100%;
+  }
+  
+
+  .contentcontainer {
+    width: 100%;
+  }
+  .colors{
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .buttons{
+    width: 100%;
+  }
+  .sizebuttons{
+    width: 100%;
+  }
+  .shopdetail{
+    width: 100%;
+  }
+}
+@media (max-width:430px) {
+  .smallimg img{
+    height: 80px;
+    width: 80px;
+  }
+}
